@@ -1,0 +1,54 @@
+* {
+    background-color: whitesmoke;
+}
+.education{
+    background-color: antiquewhite;
+}
+#comment {
+    background-color: lightcyan;
+}
+p {
+    background-color: lightgreen;
+}
+
+a[target="_hs"] {
+    background-color: yellow;
+}
+
+a[target="_college"] {
+    background-color: orange;
+}
+
+/* mouse over link */
+p:hover {
+    color: hotpink;
+}
+
+/* selector list */
+h1, h2, h3, h4, h5, h6 { font-family: helvetica; }
+
+/* descendant */
+li {
+    list-style-type: disc;
+}
+  
+li li {
+    list-style-type: circle;
+}
+
+div {
+    background-color: whitesmoke;
+}
+  
+section > div {
+    background-color: lightgoldenrodyellow;
+}
+
+p ~ pre {
+    color: blue;
+}
+
+td + td {
+    color: grey;
+}
+
