@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ruichen Li's GitHub User Page</title>
+    </head>
+    <body>
+        <header><h1><b>Welcome to <em>Ruichen Li's</em> Github User Page</b></h1></header>
+        <details>
+            <summary>Summary of this page</summary>
+            <p>A summary of my edcutation, expertise, skills, and personal insights</p>
+          </details>
+        <section>
+        
+        <canvas id="Canvas" width="500" height="100" style="border:2px solid #d3d3d3;"></canvas>
+             
+            <script>
+            var c = document.getElementById("Canvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Verdana";
+
+            var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+            gradient.addColorStop("0"," green");
+            gradient.addColorStop("0.5", "red");
+            gradient.addColorStop("1.0", "blue");
+
+            ctx.fillStyle = gradient;
+            ctx.fillText("Check out my page!",100,50);
+            </script>
+
+        <div class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <a href="https://www.prismsus.org/">Princeton International School of Math and Science</a>
+                    <br>
+                    <strong><i>PRISMS</i></strong>
+                    <p>2015 to 2019</p>
+                </li>
+
+                <li>
+                    <nav><a href="https://ucsd.edu/">Uinversity of California San Diego</a></nav>
+                    <br>
+                    <strong><i>UCSD</i></strong>
+                    <p>I am in Revelle College. The expected graduate time is <b>winter 2023</b></p>
+                    <iframe src="https://revelle.ucsd.edu/" title="Revelle college"></iframe>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="expertise">
+            <h2>Expertise</h2>
+            <ol>
+                <li>Java</li>
+                <li>R (machine learning related)</li>
+            </ol>
+        </div>
+
+        <div class="experience">
+            <h2>Experienced at</h2>
+            
+            <table>
+                <caption>List of experienced skills</caption>
+                <colgroup>
+                    <col span="2" style="background-color:lightgray">
+                </colgroup>
+                
+                <tr>
+                  <th>Skill</th>
+                  <th>Used/learned from</th>
+                </tr>
+                <tr>
+                  <td>C</td>
+                  <td>CSE 30</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>CSE 100</td>
+                </tr>
+                <tr>
+                    <td>AutoCAD</td>
+                    <td>2D design</td>
+                </tr>
+              </table>
+        </div>
+
+        <div class="about me">
+            <h2>More about me</h2>
+            <ul>
+                <li>
+                    Favorite color: blue & black
+                    <svg width="20" height="20">
+                        <circle cx="10" cy="10" r="8" stroke="black" stroke-width="4" fill="lightblue" />
+                    </svg>
+                </li>
+                <li>
+                    Favorite sound: birds chirping
+                    <br>
+                    <audio controls>
+                        <source src="Birds.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </li>
+                <li>
+                    Recent adventure: stood on a frozed lake
+                    <br>
+                    <video width="320" height="240" controls>
+                        <source src="Ice.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </li>
+                <li>
+                    Favorite soccer club: Inter Milan
+                    <br>
+
+                    <picture>
+                        <img src="inter.png" alt="Inter Milan" style="width:auto;">
+                    </picture>
+                    
+                </li>
+                <li>
+                    A few pictures of my dogs.
+                    RIP to Juli who just passed away.
+                    <br>
+                    <figure>
+                        <img src="Juli1.jpg" alt="RIP Juli" width="350" height="600">
+                        <figcaption><b>RIP</b> Juli.</figcaption>
+                      </figure>
+                    <object data="Laifu.jpg" type="image/jpg" width="500" height="400">
+                    </object>
+                </li>
+            </ul>
+        </div>
+
+        <template>
+            <h3>This is hidden from the viewers</h3>
+            <p>
+                I spent a lot of time learning and building this page. Hope you liked it.
+            </p>
+        </template>
+
+        <hr>
+
+        <h3>Comment</h3>
+        <fieldset> 
+        <legend> Comment section </legend>
+        <form action="#">
+            <label for="comment">Please submit any comment you have</label>
+            <textarea id="comment" name="comment" rows="2" cols="40">
+                Feel free to type any comments or suggestions to my page.
+            </textarea>
+            <button type="submit" value="Submit">Submit</button>
+
+            <p>Feel free to fill in more informtion about you</p>
+
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="birthday">Your birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <input type="submit">
+            <br>
+            <label for="favcolor">Your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            <input type="submit">
+            <br>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone">
+            <input type="submit">
+            <br>
+            <label for="scale">Rate my page (10 as the bset):</label>
+            <input type="number" id="scale" name="scale" min="1" max="10">
+            <input type="submit">
+            <br>
+            <label for="day">Your local date:</label>
+            <input type="month" id="day" name="day">
+            <label for="appt">Your local time:</label>
+            <input type="time" id="appt" name="appt">
+            <input type="submit">
+        
+        </form>
+        <label>Choose the type of comment you entered:</label>
+            <select  name="comment2" id="comment2">
+            <optgroup label="A comment on the content">
+                <option value="content">Add more content</option>
+                <option value="clarify">Clarification on the content</option>
+                <option value="others">Others</option>
+            </optgroup>
+            <optgroup label="A suggestion for improvement">
+                <option value="skills">On technique used</option>
+                <option value="layout">On layout</option>
+                <option value="others">Others</option>
+            </optgroup>
+            </select>
+            
+            <form action="#">
+                <label for="browser">Choose your browser you used to view the page from the list:</label>
+                <input list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                  <option value="Chrome">
+                  <option value="Edge">
+                  <option value="Safari">
+                  <option value="Firefox">
+                  <option value="Others">
+                </datalist>
+                <input type="submit">
+              </form>
+        </fieldset>
+        <br>
+        <p>The <code>submit</code> button is not ready for sending the received data to server yet.</p>
+        </section>
+
+        <aside>
+            <p>This page is made for CSE 110 week 2 lab</p>
+        </aside>
+    
+
+    <footer>
+        <p>Author: Ruichen Li<br>
+        Date: 1/13/2021</p>
+        <pre>Main sources: mainly w3schools
+            and stackoverflow
+        </pre>
+    </footer>
+
+    </body>
+</html>
