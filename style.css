@@ -1,19 +1,19 @@
 /* This is the css style sheet for index.html */
 * {
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
 }
 .education{
     background-color: antiquewhite;
 }
 #comment {
-    background-color: lightcyan;
+    background-color: rgb(224, 245, 245);
 }
 p {
     background-color: lightgreen;
 }
 
 a[target="_hs"] {
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.5);
 }
 
 a[target="_college"] {
@@ -58,3 +58,10 @@ div.expertise {
 }
 
 /* The previous section is the selectors for this css */
+
+div {
+    border-style: double;
+    border-color: royalblue;
+    border-width: 4px 4px 4px 4px;
+    border-radius: 10px;
+}
