@@ -79,6 +79,8 @@ p {
     margin-left: 3px;
     margin-right: 3px;
     padding: 3px 4px 5px 4px;
+    max-width: 20%;
+    min-width: 10%;
 }
 
 table {
@@ -86,7 +88,29 @@ table {
     width: 175px;
     margin: auto;
     border: 0.4em solid purple;
+    text-align: center;
 }
 
+h1 {
+    text-decoration: underline;
+    position: static;
+}
 
+h2 {
+    position: relative;
+}
+
+p.exe4 {
+    position: relative;
+}
+
+p.exe1{
+    display: inline-block;
+    max-width: 50%;
+    min-width: 10%;
+}
+
+p.exe2{
+    display: block;
+}
 
