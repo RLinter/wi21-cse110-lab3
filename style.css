@@ -57,6 +57,7 @@ div.expertise {
     background-color: lightgrey;
 }
 
+
 /* The previous section is the selectors for this css */
 
 div {
@@ -65,3 +66,4 @@ div {
     border-width: 4px 4px 4px 4px;
     border-radius: 10px;
 }
+
